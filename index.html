@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Family Details</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+        <h3 style="text-align:center;">Family Details Form</h3>
+
+    <form id="familyForm">
+
+        <!-- STEP 1 : PERSONAL -->
+        <div class="step" id="step-1">
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label>First Name</label>
+                <input type="text" id="firstname"><br><br>
+
+                <label>Last Name</label>
+                <input type="text" id="lastname"><br><br>
+
+                <label>DOB</label>
+                <input type="date" id="dob" onchange="calculateAge()"><br><br>
+
+                <label>Age</label>
+                <input type="text" id="age" readonly>
+            </fieldset>
+        </div>
+
+        <!-- STEP 2 : FAMILY -->
+        <div class="step" id="step-2">
+            <fieldset>
+                <legend>Family Details</legend>
+
+                <label>Father Name</label>
+                <input type="text" id="fathername"><br><br>
+
+                <label>Mother Name</label>
+                <input type="text" id="mothername"><br><br>
+
+                <label>Occupation</label>
+                <input type="radio" name="occupation" value="House Wife"> House Wife
+                <input type="radio" name="occupation" value="Working"> Working
+                <br><br>
+
+                <h4>Siblings</h4>
+                <div id="relations">
+                    <div class="relation-field">
+                        <label>Name</label>
+                        <input type="text" name="siblingName[]">
+
+                        <label>Relation</label>
+                        <input type="text" name="siblingRelation[]">
+                    </div>
+                </div>
+
+                <a href="#" id="addRelation">+ Add another</a>
+            </fieldset>
+        </div>
+
+        <!-- STEP 3 : ADDRESS -->
+        <div class="step" id="step-3">
+            <fieldset>
+                <legend>Address</legend>
+
+                <label>House No</label>
+                <input type="text" id="house"><br><br>
+
+                <label>Street</label>
+                <input type="text" id="street"><br><br>
+
+                <label>Apartment</label>
+                <input type="text" id="aprtment"><br><br>
+
+                <label>City</label>
+                <input type="text" id="city"><br><br>
+
+                <label>State</label>
+                <input type="text" id="State"><br><br>
+
+                <label>ZIP</label>
+                <input type="text" id="zip"><br><br>
+
+                <label>Country</label>
+                <input list="country-list" id="country">
+                <datalist id="country-list">
+                    <option value="Canada">
+                    <option value="United States">
+                    <option value="India">
+                    <option value="United Kingdom">
+                    <option value="Australia">
+                    <option value="Germany">
+                    <option value="France">
+                    <option value="Japan">
+                    <option value="Brazil">
+                    <option value="South Africa">
+                </datalist>
+            </fieldset>
+        </div>
+
+        <!-- BUTTONS -->
+        <div style="text-align:center; margin-top:20px;">
+            <button type="button" id="prevBtn" onclick="prevStep()">Previous</button>
+            <button type="button" id="nextBtn" onclick="nextStep()">Next</button>
+            <button type="submit" id="submitBtn">Submit</button>
+        </div>
+
+    </form>
+
+    <div id="result"></div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

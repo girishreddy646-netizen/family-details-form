@@ -1,0 +1,194 @@
+/* PAGE CENTER */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding-top: 30px;
+}
+
+/* FORM CONTAINER */
+form {
+    background: #ffffff;
+    width: 550px;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* STEP SECTIONS */
+.step {
+    display: none;
+}
+
+/* FIELDSET CARD */
+fieldset {
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+/* LEGEND */
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: #333;
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+/* INPUTS */
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* RADIO BUTTONS */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* RELATION FIELD */
+.relation-field {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.relation-field input {
+    flex: 1;
+}
+
+/* ADD RELATION LINK */
+#addRelation {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#addRelation:hover {
+    text-decoration: underline;
+}
+
+/* BUTTONS */
+button {
+    padding: 8px 16px;
+    margin: 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#prevBtn {
+    background: #6c757d;
+    color: white;
+}
+
+#nextBtn {
+    background: #007bff;
+    color: white;
+}
+
+#submitBtn {
+    background: #28a745;
+    color: white;
+}
+
+/* RESULT TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background: #fff;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #007bff;
+    color: white;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* RESULT CONTAINER */
+#result {
+    margin-top: 30px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+
+/* Center the submitted details */
+#result {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Table styling */
+#resultTable {
+    width: 70%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#resultTable th {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+#resultTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#resultTable tr:last-child td {
+    border-bottom: none;
+}
+
+h3 {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 10px;
+    background-color: #dcdcdc;
+}
